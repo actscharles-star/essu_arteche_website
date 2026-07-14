@@ -5,401 +5,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Profile | ESSU-AEC</title>
+    <link rel="stylesheet" href="profile.css">
 </head>
 
 <body>
 
-    <!-- ========================= -->
-    <!-- HEADER -->
-    <!-- ========================= -->
-
-    <h1>Student Profile</h1>
-
-    <p>
-        This page contains the profile information of a student enrolled at
-        <strong>Eastern Samar State University - Arteche Extension Campus</strong>.
-    </p>
-
-    <hr>
-
-    <!-- ========================= -->
-    <!-- PROFILE PHOTO -->
-    <!-- ========================= -->
-
-    <h2>Profile Picture</h2>
-
-    <img src="./assets/images/charlie_photo.jpg.jpg"
-         alt="Student Picture"
-         width="200"
-         height="200">
-
-    <hr>
-
-    <!-- ========================= -->
-    <!-- PERSONAL INFORMATION -->
-    <!-- ========================= -->
-
-    <h2>Personal Information</h2>
-
-    <p><strong>Full Name:</strong>Charlie O. Acaso</p>
-
-    <p><strong>Student Number:</strong> 23-04703 </p>
-
-    <p><strong>Program:</strong> Bachelor of Science in Information Technology</p>
-
-    <p><strong>Year Level:</strong> Fourth year </p>
-
-    <p><strong>Email:</strong> acasocharlieee@gmail.com </p>
-    
-
-    <p><strong>Address:</strong> Oras Eastern Samar, Philippines</p>
-
-    <hr>
-
-    <!-- ========================= -->
-    <!-- TEXT FORMATTING -->
-    <!-- ========================= -->
-
-    <h2>Text Formatting Examples</h2>
-
-    <p>
-        <b>Bold</b><br>
-        <strong>Strong Importance</strong><br>
-        <i>Italic</i><br>
-        <em>Emphasized Text</em><br>
-        <u>Underlined Text</u><br>
-        <mark>Highlighted Text</mark><br>
-        <small>Small Text</small><br>
-        H<sub>2</sub>O<br>
-        X<sup>2</sup><br>
-        <del>Deleted Text</del><br>
-        <ins>Inserted Text</ins>
-    </p>
-
-    <hr>
-
-    <!-- ========================= -->
-    <!-- BIOGRAPHY -->
-    <!-- ========================= -->
-
-    <h2>Biography</h2>
-
-    <p>
-       Charlie O. Acaso is currently pursuing a Bachelor of Science in Information Technology. 
-        He is interested in software development, cybersecurity, and computer networking.
-        He is eager to gain new knowledge and build innovative technology solutions.
-
-    </p>
-
-    <hr>
-
-    <!-- ========================= -->
-    <!-- LISTS -->
-    <!-- ========================= -->
-
-    <h2>Skills</h2>
-
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>QGIS</li>
-        <li>Problem Solving</li>
-    </ul>
-
-    <h2>Educational Background</h2>
-
-    <ol>
-        <li>Elementary - ORAS EAST ELEMENTARY SCHOOL </li>
-        <li>Junior High School - ORAS NATIONAL HIGH SCHOOL</li>
-        <li>Senior High School - ORAS NATIONAL HIGH SCHOOL</li>
-        <li>College - ESSU ARTECHE</li>
-    </ol>
-
-    <hr>
-
-    <!-- ========================= -->
-    <!-- LINKS -->
-    <!-- ========================= -->
-
-    <h2>Useful Links</h2>
-
-    <p>
-        <a href="index.html">Home</a><br>
-
-        <a href="about.html">About</a><br>
-
-        <a href="academics.html">Academics</a><br>
-
-        <a href="contact.html">Contact</a><br>
-
-        <a href="https://www.google.com" target="_blank">
-            Visit Google
-        </a>
-    </p>
-
-    <hr>
-
-    <!-- ========================= -->
-    <!-- TABLE -->
-    <!-- ========================= -->
-
-    <h2>Current Subjects</h2>
-
-    <table border="1" cellpadding="10">
-
-        <tr>
-        <th>Course Code</th>
-        <th>Description</th>
-        <th>Instructor</th>
-        <th>Schedule</th>
-    </tr>
-
-    <tr>
-        <td>IT411*</td>
-        <td>Capstone Project and Research 2</td>
-        <td>E. Borata</td>
-        <td>7:30-8:30 AM TTh RM16</td>
-    </tr>
-
-    <tr>
-        <td>IT411*</td>
-        <td>Capstone Project and Research 2</td>
-        <td>E. Borata</td>
-        <td>8:30-10:30 AM TTh RM16</td>
-    </tr>
-
-    <tr>
-        <td>IT413*</td>
-        <td>IT Elective 3</td>
-        <td>A. Morallos</td>
-        <td>11:00 AM-12:30 PM TTh RM16</td>
-    </tr>
-
-    <tr>
-        <td>IT413*</td>
-        <td>IT Elective 3</td>
-        <td>A. Morallos</td>
-        <td>10:00-11:00 AM TTh RM16</td>
-    </tr>
-
-    <tr>
-        <td>IT_414</td>
-        <td>IT Elective 4 (Data Visualization)</td>
-        <td>F. Amoyan</td>
-        <td>7:30-8:30 AM MW RM16</td>
-    </tr>
-
-    <tr>
-        <td>IT_414</td>
-        <td>IT Elective 4 (Data Visualization)</td>
-        <td>F. Amoyan</td>
-        <td>8:30-10:00 AM MW RM16</td>
-    </tr>
-
-    <tr>
-        <td>IT412*</td>
-        <td>Special Topics in Information Technology</td>
-        <td>E. Borata</td>
-        <td>3:30-5:00 PM MW RM16</td>
-    </tr>
-
-    </table>
-
-    <hr>
-
-    <!-- ========================= -->
-    <!-- BLOCK AND INLINE ELEMENTS -->
-    <!-- ========================= -->
-
-    <h2>Block and Inline Elements</h2>
-
-    <div>
-
+    <div class="header">
+        <h1>Student Profile</h1>
         <p>
-            This paragraph is inside a
-            <span>DIV</span> element.
-
-            The word
-            <span style="color:red;">
-                RED
-            </span>
-
-            is displayed using a SPAN element.
+            This page contains the profile information of a student enrolled at
+            <strong>Eastern Samar State University - Arteche Extension Campus</strong>.
         </p>
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academics.html">Academics</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="container">
+
+        <div class="two-column">
+
+            <div class="biography">
+                <h2>Biography</h2>
+                <p>
+                    Charlie O. Acaso is currently pursuing a Bachelor of Science in Information Technology.
+                    He is interested in software development, cybersecurity, and computer networking.
+                    He is eager to gain new knowledge and build innovative technology solutions.
+                </p>
+            </div>
+
+            <div class="subjects">
+                <h2>Current Subjects</h2>
+                <table>
+                    <tr>
+                        <th>Code</th>
+                        <th>Description</th>
+                        <th>Instructor</th>
+                        <th>Schedule</th>
+                    </tr>
+                    <tr>
+                        <td>IT411*</td>
+                        <td>Capstone Project and Research 2</td>
+                        <td>E. Borata</td>
+                        <td>7:30-8:30 AM TTh</td>
+                    </tr>
+                    <tr>
+                        <td>IT411*</td>
+                        <td>Capstone Project and Research 2</td>
+                        <td>E. Borata</td>
+                        <td>8:30-10:30 AM TTh</td>
+                    </tr>
+                    <tr>
+                        <td>IT413*</td>
+                        <td>IT Elective 3</td>
+                        <td>A. Morallos</td>
+                        <td>11:00-12:30 PM TTh</td>
+                    </tr>
+                    <tr>
+                        <td>IT413*</td>
+                        <td>IT Elective 3</td>
+                        <td>A. Morallos</td>
+                        <td>10:00-11:00 AM TTh</td>
+                    </tr>
+                    <tr>
+                        <td>IT_414</td>
+                        <td>IT Elective 4 (Data Visualization)</td>
+                        <td>F. Amoyan</td>
+                        <td>7:30-8:30 AM MW</td>
+                    </tr>
+                    <tr>
+                        <td>IT_414</td>
+                        <td>IT Elective 4 (Data Visualization)</td>
+                        <td>F. Amoyan</td>
+                        <td>8:30-10:00 AM MW</td>
+                    </tr>
+                    <tr>
+                        <td>IT412*</td>
+                        <td>Special Topics in Information Technology</td>
+                        <td>E. Borata</td>
+                        <td>3:30-5:00 PM MW</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+        <div class="contact-form">
+            <h2>Contact the Student</h2>
+            <form>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="4"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="school-location">
+            <h2>School Location</h2>
+            <iframe src="https://www.google.com" height="300"></iframe>
+        </div>
 
     </div>
 
-    <hr>
-
-    <!-- ========================= -->
-    <!-- COLORS -->
-    <!-- ========================= -->
-
-    <h2>HTML Color Examples</h2>
-
-    <p style="color:blue;">
-        This text is blue.
-    </p>
-
-    <p style="color:red;">
-        This text is red.
-    </p>
-
-    <p style="background-color:yellow;">
-        Yellow Background
-    </p>
-
-    <hr>
-
-    <!-- ========================= -->
-    <!-- FORM -->
-    <!-- ========================= -->
-
-    <h2>Contact the Student</h2>
-
-    <form>
-
-        <p>
-
-            <label for="fullname">
-                Full Name:
-            </label>
-
-            <br>
-
-            <input
-                type="text"
-                id="fullname"
-                name="fullname">
-
-        </p>
-
-        <p>
-
-            <label for="email">
-                Email Address:
-            </label>
-
-            <br>
-
-            <input
-                type="email"
-                id="email"
-                name="email">
-
-        </p>
-
-        <p>
-
-            <label for="course">
-                Course:
-            </label>
-
-            <br>
-
-            <select id="course">
-
-                <option>BSIT</option>
-                <option>BSEd</option>
-                <option>BEEd</option>
-                <option>BSHM</option>
-
-            </select>
-
-        </p>
-
-        <p>
-
-            Gender
-
-            <br>
-
-            <input
-                type="radio"
-                name="gender">
-
-            Male
-
-            <br>
-
-            <input
-                type="radio"
-                name="gender">
-
-            Female
-
-        </p>
-
-        <p>
-
-            Interests
-
-            <br>
-
-            <input type="checkbox">
-
-            Programming
-
-            <br>
-
-            <input type="checkbox">
-
-            Networking
-
-            <br>
-
-            <input type="checkbox">
-
-            Multimedia
-
-        </p>
-
-        <p>
-
-            <label for="message">
-                Message
-            </label>
-
-            <br>
-
-            <textarea
-                id="message"
-                rows="5"
-                cols="40"></textarea>
-
-        </p>
-
-        <input type="submit" value="Submit">
-
-        <input type="reset" value="Clear">
-
-    </form>
-
-    <hr>
-
-    <!-- ========================= -->
-    <!-- IFRAME -->
-    <!-- ========================= -->
-
-    <h2>School Location</h2>
-
-    <iframe
-        src="https://www.google.com"
-        width="600"
-        height="300">
-    </iframe>
-
-    <hr>
-
-    <!-- ========================= -->
-    <!-- FOOTER -->
-    <!-- ========================= -->
-
-    <p>
-
-        &copy; 2026 ESSU - Arteche
-
-    </p>
+    <div class="footer">
+        <p>&copy; 2026 ESSU - Arteche</p>
+    </div>
 
 </body>
 
